@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>catch-me</title>
+
+    <link rel="icon" href="content/favicon.webp" />
+
+    <link rel="stylesheet" href="styles/app.css" />
+    <link rel="stylesheet" href="styles/game.css" />
+    <link rel="stylesheet" href="styles/transitions.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <link rel="stylesheet" href="styles/sizes.css" />
+    <link rel="stylesheet" href="styles/light.css" />
+  </head>
+  <body>
+    <header id="site-intro">
+      <h1>catch-me</h1>
+      <p>A short web game where you click an elusive square.</p>
+      <img id="site-icon" src="content/favicon.webp" alt="Site icon" />
+      <div id="theme-toggle-container">
+        <button id="theme-toggle-button">Toggle Theme</button>
+      </div>
+    </header>
+
+    <article class="centered-div">
+      <h3>Game Instructions</h3>
+      <p style="margin: 0.5em 0">
+        Select a difficulty level and click 'Begin' to play. Try to click the
+        <span class="accented-text">square</span> within the time limit - if you
+        miss the square, you'll lose a life. The game ends when you run out of
+        lives or time.
+      </p>
+    </article>
+
+    <section id="game-options-container">
+      <label for="game-difficulty">Select difficulty:</label>
+      <select name="game-difficulty" id="game-difficulty">
+        <option value="easy" data-description="5 seconds per round.">
+          Easy
+        </option>
+        <option
+          value="medium"
+          data-description="4 seconds per round; The square's shape will change."
+        >
+          Medium
+        </option>
+        <option
+          value="hard"
+          data-description="3 seconds per round; The square's shape will change and rotate."
+        >
+          Hard
+        </option>
+        <option
+          value="impossible"
+          data-description="3 seconds per round; The square's shape will change, rotate and disappear."
+        >
+          Impossible
+        </option>
+      </select>
+    </section>
+
+    <div id="difficulty-description" class="centered-div">
+      5 seconds per round.
+    </div>
+
+    <main>
+      <button id="start-button">Begin</button>
+
+      <div>
+        <ul id="game-stats">
+          <li id="game-timer-container">
+            ⏳: <span id="game-timer"> 5 </span>
+          </li>
+          <li id="game-score-container">
+            Score: <span id="game-score"> 0 </span>
+          </li>
+          <li>
+            Lives:
+            <span id="game-lives">❤️❤️❤️</span>
+          </li>
+        </ul>
+        <section id="game-container">
+          <button id="game-target"></button>
+        </section>
+      </div>
+      <div style="margin-top: 1em" class="centered-div">
+        <p>Best score: <span id="game-best-score">0</span></p>
+      </div>
+    </main>
+
+    <footer id="site-footer">
+      <aside>
+        <p>&copy; QuevDev 2023</p>
+        <p>All rights reserved.</p>
+      </aside>
+      <aside>
+        <h4>About this site:</h4>
+        <p>
+          This site was made with plain JavaScript, HTML and CSS. If you'd like
+          to view the project files & code, you can click the link below to view
+          the repository on GitHub.
+        </p>
+        <a rel="noreferrer" target="_blank" href="https://github.com/quev-dev">
+          GitHub
+        </a>
+      </aside>
+      <aside>
+        <p>
+          If you enjoyed this short project, you can check out a variety of my
+          other works through my portfolio.
+        </p>
+        <a rel="noreferrer" target="_blank" href="https://quevdev.netlify.app"
+          >Portfolio</a
+        >
+      </aside>
+    </footer>
+
+    <script src="scripts/toggleTheme.js"></script>
+    <script src="scripts/resetDifficulty.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

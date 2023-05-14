@@ -1,0 +1,33 @@
+@media (min-width: 768px) {
+  header,
+  main,
+  .centered-div,
+  #start-button,
+  #game-options-container {
+    font-size: 1.2em;
+  }
+
+  select {
+    font-size: 0.85em;
+  }
+
+  #game-container {
+    width: 500px;
+    height: 500px;
+  }
+  #game-target {
+    width: 400px;
+    height: 400px;
+  }
+
+  #site-intro {
+    width: 50%;
+    margin: inherit auto;
+  }
+
+  .centered-div,
+  #site-footer aside {
+    width: 50%;
+    margin: 0 auto;
+  }
+}

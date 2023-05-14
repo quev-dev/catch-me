@@ -1,0 +1,52 @@
+#game-options-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5em;
+  margin-top: 1em;
+
+  transition: var(--transition);
+}
+
+#game-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: var(--border-radius);
+  background-color: var(--c-dark-bg-darker);
+
+  padding: 0.5em;
+}
+
+#game-stats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  margin: 0.5em 0;
+}
+#game-stats li span {
+  font-weight: bold;
+  color: var(--c-accent);
+}
+
+#game-best-score {
+  color: var(--c-accent);
+  font-weight: bold;
+}
+
+#game-target {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  border-radius: var(--border-radius);
+  background-color: var(--c-accent);
+
+  cursor: pointer;
+  transition: var(--transition-target);
+
+  z-index: 100;
+}

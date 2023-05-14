@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+  --c-dark-bg-darker: #282121;
+  --c-dark-bg: #312929;
+  --c-dark-text: #ede5d2;
+
+  --c-light-bg-darker: #e2c8c0;
+  --c-light-bg: #e4d2ca;
+  --c-light-text: #281c1f;
+
+  --c-accent: #f2674a;
+
+  --border-radius: 0.25em;
+  --transition: all 0.1s ease;
+  --transition-target: all 0.2s ease;
+
+  --shadow-soft: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--c-dark-bg);
+  color: var(--c-dark-text);
+  transition: var(--transition);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2em auto;
+}
+
+button {
+  transition: var(--transition);
+
+  border: none;
+  color: var(--c-dark-text);
+  cursor: pointer;
+
+  padding: 0.25em 0.5em;
+  font-weight: bold;
+  border-radius: var(--border-radius);
+  background-color: var(--c-accent);
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+select {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  border-radius: var(--border-radius);
+  background-color: var(--c-dark-bg-darker);
+  color: var(--c-accent);
+  transition: var(--transition);
+}
+select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  max-width: max-content;
+  transition: var(--transition);
+  text-decoration: none;
+  color: var(--c-accent);
+
+  border-bottom: 1px solid transparent;
+}
+
+#theme-toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#theme-toggle-button {
+  padding: 0.5em;
+  background-color: var(--c-dark-text);
+  color: var(--c-accent);
+  transition: all 0.25s ease;
+}
+
+#site-icon {
+  align-self: center;
+  width: 4em;
+  height: 4em;
+  z-index: 50;
+  transition: all 0.35s ease;
+}
+
+#site-intro {
+  gap: 0.5em;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: items-center;
+
+  width: 80%;
+  margin: 4em auto;
+
+  padding: 2em 0;
+  background-color: var(--c-dark-bg-darker);
+  border-radius: var(--c-border-radius);
+
+  transition: var(--transition);
+}
+#site-intro h1 {
+  font-size: 2.25em;
+  font-weight: bold;
+  color: var(--c-accent);
+}
+
+#site-footer {
+  bottom: 0;
+  padding: 2em;
+  position: relative;
+  background-color: var(--c-dark-bg-darker);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+
+  transition: var(--transition);
+}
+#site-footer aside {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+#start-button {
+  font-size: 1em;
+  margin: 0.25em;
+}
+
+.centered-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+
+  margin: 0.5em 2em;
+}
+
+.accented-text {
+  color: var(--c-accent);
+}
+
+#difficulty-description {
+  display: flex;
+  text-align: center;
+}

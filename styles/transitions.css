@@ -1,0 +1,20 @@
+a:hover {
+  filter: brightness(125%);
+  border-bottom: 1px solid var(--c-accent);
+}
+a:active {
+  opacity: 50%;
+}
+
+#start-button:hover {
+  transform: translateY(-3px);
+  filter: brightness(125%);
+}
+#start-button:active {
+  transform: translateY(0px);
+  opacity: 0.5;
+}
+
+#game-target:hover {
+  filter: brightness(150%);
+}
