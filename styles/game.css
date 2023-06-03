@@ -49,4 +49,5 @@
   transition: var(--transition-target);
 
   z-index: 100;
+  opacity: 0.25;
 }

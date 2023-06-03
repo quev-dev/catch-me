@@ -87,7 +87,7 @@ function endGame() {
   gameTarget.disabled = true;
   gameDifficulty.disabled = false;
   gameTimer.textContent = difficultyTimer;
-  gameTarget.style.opacity = 0.5;
+  gameTarget.style.opacity = 0.25;
   opacity = 1;
 
   if (round > bestScore) {
