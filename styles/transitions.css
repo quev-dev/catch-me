@@ -6,10 +6,12 @@ a:active {
   opacity: 50%;
 }
 
+#end-button:hover,
 #start-button:hover {
   transform: translateY(-3px);
   filter: brightness(125%);
 }
+#end-button:active,
 #start-button:active {
   transform: translateY(0px);
   opacity: 0.5;

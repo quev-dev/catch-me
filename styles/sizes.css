@@ -3,6 +3,7 @@
   main,
   .centered-div,
   #start-button,
+  #end-button,
   #game-options-container {
     font-size: 1.2em;
   }

@@ -6,6 +6,7 @@ const gameScore = document.getElementById('game-score');
 const gameLives = document.getElementById('game-lives');
 const gameDifficulty = document.getElementById('game-difficulty');
 const startButton = document.getElementById('start-button');
+const endButton = document.getElementById('end-button');
 const difficultyDescription = document.getElementById('difficulty-description');
 
 const originalTargetWidth = gameTarget.offsetWidth;
@@ -29,6 +30,7 @@ let lives = MAX_LIVES;
 gameTarget.disabled = true;
 gameTarget.addEventListener('click', moveSquare);
 startButton.addEventListener('click', startGame);
+endButton.addEventListener('click', endGame);
 
 gameDifficulty.addEventListener('change', () => {
   const selectedOption = gameDifficulty.options[gameDifficulty.selectedIndex];
@@ -84,6 +86,7 @@ function endGame() {
   clearInterval(timerID);
   clearInterval(opacityIntervalID);
   startButton.disabled = false;
+  endButton.disabled = true;
   gameTarget.disabled = true;
   gameDifficulty.disabled = false;
   gameTimer.textContent = difficultyTimer;
@@ -154,6 +157,7 @@ function startGame() {
   gameScore.textContent = 0;
   gameDifficulty.disabled = true;
   startButton.disabled = true;
+  endButton.disabled = false;
   timer = difficultyTimer;
   initiateTimerInterval();
 

@@ -150,7 +150,8 @@ a {
   gap: 0.25em;
 }
 
-#start-button {
+#start-button,
+#end-button {
   font-size: 1em;
   margin: 0.25em;
 }
