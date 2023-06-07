@@ -51,24 +51,27 @@
     <section id="game-options-container">
       <label for="game-difficulty">Select difficulty:</label>
       <select name="game-difficulty" id="game-difficulty">
-        <option value="easy" data-description="5 seconds per round.">
+        <option
+          value="easy"
+          data-description="You have 5 seconds to click the square."
+        >
           Easy
         </option>
         <option
           value="medium"
-          data-description="4 seconds per round; The square's shape will change."
+          data-description="You have 4 seconds to click the square. The square's shape will change."
         >
           Medium
         </option>
         <option
           value="hard"
-          data-description="3 seconds per round; The square's shape will change and rotate."
+          data-description="You have 3 seconds to click the square. The square's shape will change and rotate."
         >
           Hard
         </option>
         <option
           value="impossible"
-          data-description="3 seconds per round; The square's shape will change, rotate and disappear."
+          data-description="You have 3 seconds to click the square. The square's shape will change, rotate and disappear."
         >
           Impossible
         </option>
@@ -76,7 +79,10 @@
     </section>
 
     <div id="difficulty-description" class="centered-div">
-      5 seconds per round.
+      <h4>Difficulty Changes:</h4>
+      <p id="difficulty-description-text">
+        You have 5 seconds to click the square.
+      </p>
     </div>
 
     <main>

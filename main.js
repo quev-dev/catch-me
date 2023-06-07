@@ -7,7 +7,9 @@ const gameLives = document.getElementById('game-lives');
 const gameDifficulty = document.getElementById('game-difficulty');
 const startButton = document.getElementById('start-button');
 const endButton = document.getElementById('end-button');
-const difficultyDescription = document.getElementById('difficulty-description');
+const difficultyDescription = document.getElementById(
+  'difficulty-description-text'
+);
 
 const originalTargetWidth = gameTarget.offsetWidth;
 const originalTargetHeight = gameTarget.offsetHeight;

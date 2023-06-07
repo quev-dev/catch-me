@@ -9,6 +9,7 @@ body.light select {
 
 body.light #site-intro,
 body.light #site-footer,
+body.light #difficulty-description,
 body.light #game-container {
   background-color: var(--c-light-bg-darker);
 }

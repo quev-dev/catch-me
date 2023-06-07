@@ -172,5 +172,12 @@ a {
 
 #difficulty-description {
   display: flex;
+  flex-direction: column;
+  gap: 0.5em;
   text-align: center;
+  background-color: var(--c-dark-bg-darker);
+  margin-top: 0.5em;
+  padding: 1em;
+  border-radius: var(--border-radius);
+  width: max-content;
 }
